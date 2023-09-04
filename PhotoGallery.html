@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .sticky {
+      background-color: lavenderblush;
+      position: sticky;
+      top: 0;
+      height: 10vh;
+      z-index: 100;
+      border-radius: 2px;
+    }
+    .heading {
+      text-align: center;
+      font-size: 50px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 10px 20px;
+    }
+    nav ul li a {
+      color: forestgreen;
+      text-decoration: none;
+      transition: color 0.3s;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+    }
+    nav ul li a:hover {
+      color: #0051ff;
+      font-size: 35px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #home {
+      background-color: #15d6b6;
+      height: 110vh;
+
+      padding: 30px 70px;
+    }
+    #flower {
+      background-color: #46dff0;
+      height: 100vh;
+
+      padding: 30px 70px;
+    }
+    #animal {
+      background-color: lightblue;
+      height: 100vh;
+
+      padding: 30px 70px;
+    }
+    #advanture {
+      background-color: #46dff0;
+      height: 100vh;
+
+      padding: 30px 70px;
+    }
+    #tour {
+      background-color: #19fa99;
+      height: 100vh;
+
+      padding: 30px 70px;
+    }
+
+    .container {
+      height: 80vh;
+      width: 90vw;
+      background-color: #333;
+      box-shadow: 2px 2px 2px 2px #333;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+    }
+    .box {
+      border: 3px solid #1aeabd;
+      width: 20vw;
+      height: 30vh;
+      margin: 5px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 3px 5px #372408;
+    }
+    .box img {
+      border-radius: 10px;
+      width: 19.7vw;
+      height: 29.5vh;
+      transition: width 2s, height 2s, transform 3s;
+    }
+
+    .box img:hover {
+      width: 24vw;
+      height: 35vh;
+      transform: scale(360deg);
+      border-radius: 50px;
+    }
+  </style>
+  <body>
+    <header class="sticky">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#flower">Flower</a></li>
+          <li><a href="#animal">Animal</a></li>
+          <li><a href="#advanture">Advanture</a></li>
+          <li><a href="#tour">Tour</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h1 class="heading">Home</h1>
+      <div class="container">
+        <div class="box"><img src="img4.jpg" alt="photo1" /></div>
+        <div class="box"><img src="ad3.jpg" alt="" /></div>
+        <div class="box"><img src="t1.jpg" alt="" /></div>
+        <div class="box"><img src="ani1.jpg" alt="" /></div>
+        <div class="box"><img src="img3.jpg" alt="" /></div>
+        <div class="box"><img src="t5.jpg" alt="" /></div>
+        <div class="box"><img src="ani5.jpg" alt="" /></div>
+        <div class="box"><img src="img2.jpg" alt="" /></div>
+      </div>
+    </section>
+
+    <section id="flower">
+      <h1 class="heading">Flowers Images</h1>
+      <div class="container">
+        <div class="box"><img src="img4.jpg" alt="photo1" /></div>
+        <div class="box"><img src="img2.jpg" alt="" /></div>
+        <div class="box"><img src="img3.jpg" alt="" /></div>
+        <div class="box"><img src="img2.jpg" alt="" /></div>
+        <div class="box"><img src="img3.jpg" alt="" /></div>
+        <div class="box"><img src="img4.jpg" alt="" /></div>
+        <div class="box"><img src="img5.jpg" alt="" /></div>
+        <div class="box"><img src="photo1.jpg" alt="" /></div>
+      </div>
+    </section>
+
+    <section id="animal">
+      <h1 class="heading">Animals Images</h1>
+      <div class="container">
+        <div class="box"><img src="ani1.jpg" alt="photo1" /></div>
+        <div class="box"><img src="ani2.jpg" alt="" /></div>
+        <div class="box"><img src="ani3.jpg" alt="" /></div>
+        <div class="box"><img src="ani4.jpg" alt="" /></div>
+        <div class="box"><img src="ani5.jpg" alt="" /></div>
+        <div class="box"><img src="ani1.jpg" alt="" /></div>
+        <div class="box"><img src="ani4.jpg" alt="" /></div>
+        <div class="box"><img src="ani2.jpg" alt="" /></div>
+      </div>
+    </section>
+
+    <section id="advanture">
+      <h1 class="heading">Advanture Images</h1>
+      <div class="container">
+        <div class="box"><img src="ad1.jpg" alt="photo1" /></div>
+        <div class="box"><img src="ad2.jpg" alt="" /></div>
+        <div class="box"><img src="ad3.jpg" alt="" /></div>
+        <div class="box"><img src="ad4.jpg" alt="" /></div>
+        <div class="box"><img src="ad5.jpg" alt="" /></div>
+        <div class="box"><img src="ad6.jpg" alt="" /></div>
+        <div class="box"><img src="ad7.jpg" alt="" /></div>
+        <div class="box"><img src="ad8.jpg" alt="" /></div>
+      </div>
+    </section>
+
+    <section id="tour">
+      <h1 class="heading">Tours Images</h1>
+      <div class="container">
+        <div class="box"><img src="t1.jpg" alt="photo1" /></div>
+        <div class="box"><img src="t4.jpg" alt="" /></div>
+        <div class="box"><img src="t5.jpg" alt="" /></div>
+        <div class="box"><img src="t2.jpg" alt="" /></div>
+        <div class="box"><img src="t3.jpg" alt="" /></div>
+        <div class="box"><img src="t6.jpg" alt="" /></div>
+        <div class="box"><img src="t5.jpg" alt="" /></div>
+        <div class="box"><img src="t4.jpg" alt="" /></div>
+      </div>
+    </section>
+  </body>
+</html>
